@@ -7,45 +7,13 @@ pktd
 
 `pktd` is the primary full node *PKT Cash* implementation, written in Go.
 
-The PKT Cash project is currently under active development and considered 
-to be beta quality software.
-
-In particular, the development branch of `pktd` is highly experimental, 
-and should generally not be used in a production environment or on the
-PKT Cash mainnet.
-
-`pktd` is the primary mainnet node software for the PKT blockchain.
-It is known to correctly download, validate, and serve the chain,
-using rules for block acceptance based on Bitcoin Core, with the
-addition of PacketCrypt Proofs. 
-
-It relays newly mined blocks, and individual transactions that have 
-not yet made it into a block, as well as maintaining a transaction pool.
-All individual transactions admitted to the pool follow rules defined by 
-the network operators, which include strict checks to filter transactions
-based on miner requirements ("standard" vs "non-standard" transactions).
-
-Unlike other similar software, `pktd` does *NOT* directly include wallet
-functionality - this was an intentional design decision.  You will not be
-able to make or receive payments with `pktd` directly.
-
-Example wallet functionality is provided in the included, separate,
-[pktwallet](https://github.com/pkt-cash/pktd/tree/master/pktwallet) package.
-
-## Requirements
-
-* Google [Go](http://golang.org) (Golang) version 1.14 or higher.
-* A somewhat recent release of Git.
-
-## Issue Tracker
-
-* The GitHub [integrated GitHub issue tracker](https://github.com/pkt-cash/pktd/issues) is used for this project.  
+This is a mirror of the original project designed to work with the PacketCrypt Blockchain
 
 ## Building
 
 Using `git`, clone the project from the repository:
 
-`git clone https://github.com/pkt-cash/pktd`
+`git clone https://github.com/PKTW3/pktd`
 
 Use the `./do` shell script to build `pktd`, `pktwallet`, and `pktctl`.
 
@@ -65,7 +33,7 @@ for download [here](https://storage.googleapis.com/golang/getgo/installer_linux)
 
 ## Documentation
 
-The documentation for `pktd` is work-in-progress, and available in the [docs](https://github.com/pkt-cash/pktd/tree/master/docs) folder.
+The documentation for `pktd` is work-in-progress, and available in the [docs] folder.
 
 ## License
 
